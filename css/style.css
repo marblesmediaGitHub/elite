@@ -1,0 +1,626 @@
+/*
+Name: Elite Valeting
+Author: Kevin Watkins
+Author URI: https://www.marblesmedia.co.uk/
+Description: Full screen homepage with about section, image gallery pages and contact.
+Version: 1.0
+*/
+
+/*********** Reset CSS **********/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/********** End CSS Reset **********/
+
+body {
+    background-color: #fff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 25px;
+}
+
+#header {
+    background-image: url("rumps.jpg");
+    height:100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+#header-standard {
+    background-image: url("https://marblesmedia.co.uk/samples/brian-watkins-photography/Kynance.jpg");
+    height:400px;
+    background-size: cover;
+    background-position: center center;
+    /*margin-bottom: -58px;*/
+}
+
+.scroll-down {
+    width: 75px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -150px;
+    display: block;
+}
+
+.clear-scroll-down {
+    margin-top: 58px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    margin: 1em 0em 1em 0em;
+    text-align:center;
+}
+
+h2 a {
+    font-size: 1.7em;
+    color:#07334d;
+    text-decoration:none;
+    font-family: 'Dancing Script', cursive;
+    z-index:100000;
+}
+
+.dancing {
+    font-size: 1.7em;
+    color:#07334d;
+    text-decoration:none;
+    font-family: 'Dancing Script', cursive;
+}
+
+.small {
+    font-size: 0.7em;
+}
+
+.display-mobile {
+    display: none;
+    margin-top:-10px;
+}
+
+.mobile-none {
+    display: inline;
+}
+
+/*** Font Colour ***/
+
+.color-1 {
+    color: #fff;
+}
+
+.color-2 {
+    color: #6C7A89;
+}
+
+.color-3 {
+    color: #ECECEC;
+}
+.color-4 {
+    color: #07324d;
+}
+
+/*** Background Colour ***/
+
+
+.bg-color-1 {
+    background-color: #fff;
+}
+.bg-color-2 {
+    background-color: #6c7a89;
+}
+.bg-color-3 {
+    background-color: rgb(20, 96, 142);
+}
+
+
+/*** Flex ***/
+
+.flex {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    margin: 10px;
+}
+
+/********** Align **********/
+
+.center {
+    text-align: center !important;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.top {
+    top: 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*** Nav ***/
+
+.nav {
+    top:0;
+    position: absolute;
+    /* background-color: rgba(7, 51, 77, 0.25); */
+    height: 63px;
+    width: 100%;
+    text-align: right;
+    transition: 0.5s;
+}
+
+#nav a {
+    text-decoration: none;
+    padding:5px 5px 4px 5px;
+    border: 1px solid transparent;
+    font-size: 1.7em;
+    font-family: 'Dancing Script', cursive;
+}
+
+#nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#nav a:hover {
+    color: #fff;
+    transition: 0.5s;
+    border: #fff 1px solid;
+
+}
+
+#nav a:active {
+    color: #fff;
+    border: #fff 1px solid;
+
+}
+
+.logo-link {
+    font-size: 1.8em !important;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*** Side Nav For Mobile ***/
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 51, 77, 0.9);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #999;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Dancing Script', cursive;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 4em;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+
+/*** End Nav ***/
+
+.header {
+    display: block;
+    width: 100%;
+}
+
+.content {
+    max-width:960px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin:0 auto;
+}
+
+.container {
+    max-width:960px;
+    padding: 5% 5% 4% 5%;
+    margin:0 auto;
+
+    /* margin-top: 58px; */
+}
+.content-nav-only {
+    max-width: 960px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+}
+
+#footer {
+    display: block;
+    width: 100%;
+    background-color: #07324d;
+}
+
+#footer p {
+    margin:0;
+}
+
+#footer a, #footer a:hover {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+#footer a:hover {
+    color: #FFFFFF;
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInUp {
+    animation-name: slideInUp;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.fade-in-1s {
+    animation: opac 0.5s;
+}
+
+.fade-in-2s {
+    animation: opac 2s
+}
+
+.fade-in-3s {
+    animation: opac 3s
+}
+
+.fade-in-4s {
+    animation: opac 4s
+}
+
+.fade-in-5s {
+    animation: opac 5s
+}
+
+.fade-in-6s {
+    animation: opac 6s
+}
+
+@keyframes opac { 
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 768px) {
+    .flex {
+        display: block;
+    }
+    .box {
+        margin: 0;
+    }
+    .display-mobile {
+        display: block;
+        padding-top:20px;
+        font-size: 30px;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .nav {
+        background-color: #07324d;
+    }
+    .attachment-post-thumbnail {
+        margin-top:63px;
+    }
+    .clear-scroll-down {
+        margin-top: 0px;
+    }
+    .gallery-item {
+          width: 100% !important;
+     }
+     .gallery .gallery-item img {
+          width: 100%;
+          height: auto;
+     }
+}
+
+.size-thumbnail {
+    width:96%;
+    height:auto;
+    border-radius:5px;
+}
+
+.size-thumbnail:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+
+/* Wordpress Gallery Code - Removed from default inline to validate */
+
+            #gallery-1 {
+                margin: auto;
+            }
+            #gallery-1 .gallery-item {
+                float: left;
+                margin-top: 10px;
+                text-align: center;
+                width: 50%;
+            }
+            #gallery-1 img {
+                border: none;
+            }
+            #gallery-1 .gallery-caption {
+                margin-left: 0;
+            }
+
+/* Remove Fancybox Caption */
+
+.fancybox-caption-wrap {display:none}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft {float: left;margin: 0 1em 1em 0;}
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.hentry {
+    overflow: hidden;
+ }
+ 
+.wp-image-128 {
+    border-radius: 10px;
+}
+
+ @media (max-width: 540px) {
+     .wp-image-128 {
+         width:100%;
+         height:auto;
+     }
+
+     .logo-link{
+         font-size: 1.5em !important;
+     }
+     .left {
+        text-align: center;
+     }
+}
+
+ .mobile-center {
+    text-align: left !important;
+ }
+
+.box img {
+    width: 100%;
+    height:auto;
+}
+
+.box {
+    text-align:center;
+}
+
+.size-post-thumbnail {
+    width:100%;
+    height:auto;
+}
+
+.wp-caption-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    line-height: 30px;
+}
+
+.gallery-caption {
+    margin-bottom: 0;
+}
+
+.fa-bars {
+    padding-top:6px;
+}
