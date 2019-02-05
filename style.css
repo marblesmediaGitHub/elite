@@ -125,7 +125,6 @@ table {
     border-spacing: 0;
 }
 
-
 /********** End CSS Reset **********/
 
 body, ul, li, p {
@@ -136,6 +135,8 @@ body, ul, li, p {
     font-weight: 400;
     color: #000;
     line-height: 25px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 p {
@@ -150,6 +151,13 @@ h1 {
     font-size: 12px;
 }
 
+.big {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
+    margin: 0px;
+}
+
 .massive {
   font-size: 60px;
   text-align: center;
@@ -158,6 +166,10 @@ h1 {
   position: relative;
   top: 40%;
   line-height:60px;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .display-mobile {
@@ -175,11 +187,10 @@ h1 {
 }
 
 .color-3 {
-    color: #27679a;
+    color: #3f4a96;
 }
 
 /*** Background Colour ***/
-
 
 .bg-color-1 {
     background-color: #fff;
@@ -188,11 +199,13 @@ h1 {
     background-color: #6c7a89;
 }
 .bg-color-3 {
-    background-color: #27679a;
+    background-color: #3f4a96;
 }
 
 .bgimg-leather {
-        background-image: url("leather.jpg");
+    background-image: url("images/raindrops.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /*** Flex Box ***/
@@ -206,6 +219,11 @@ h1 {
     margin-right: 20px;
 }
 
+.home-tripple {
+    background-color: #8b8d96;
+    padding: 20px 10px;
+    margin: 5px;
+}
 /********** Align **********/
 
 .center {
@@ -360,7 +378,7 @@ h1 {
     width: 100%;
     padding-top:10px;
     padding-bottom: 10px;
-    background-color: #333;
+    background-color: #3f4a96;
 }
 
 .footer .content {
