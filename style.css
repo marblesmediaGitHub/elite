@@ -151,6 +151,10 @@ h1 {
     font-size: 12px;
 }
 
+.large {
+    font-size: 1.4em;
+}
+
 .big {
     font-size: 40px;
     text-align: center;
@@ -192,6 +196,10 @@ h1 {
 
 .color-3 {
     color: #3f4a96;
+}
+
+.color-4 {
+    color: #b8101a;
 }
 
 /*** Background Colour ***/
@@ -511,5 +519,8 @@ h1 {
     }
     .home-tripple{
         margin: 20px 0px;
+    }
+    .large {
+        font-size: 1.2em;
     }
 }
