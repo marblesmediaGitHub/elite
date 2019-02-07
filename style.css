@@ -176,6 +176,10 @@ h1 {
     display: none;
 }
 
+.icons {
+    max-width:220px;
+}
+
 /*** Font Colour ***/
 
 .color-1 {
@@ -199,7 +203,7 @@ h1 {
     background-color: #6c7a89;
 }
 .bg-color-3 {
-    background-color: #3f4a96;
+    background-color: #011a5c;
 }
 
 .bgimg-leather {
@@ -219,11 +223,18 @@ h1 {
     margin-right: 20px;
 }
 
-.home-tripple {
-    background-color: #8b8d96;
-    padding: 20px 10px;
-    margin: 5px;
+.middle {
+    align-items: center;
 }
+
+.rounded {
+    border-radius: 40px 5px;
+}
+
+.home-tripple {
+    padding: 30px;
+}
+
 /********** Align **********/
 
 .center {
@@ -295,7 +306,7 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #27679a;
+    background-color: #3f4a96;
     overflow-x: hidden;
     /*padding-top: 60px;*/
     transition: 0.5s;
@@ -351,8 +362,8 @@ h1 {
 }
 
 .content {
-    max-width:1200px;
-    padding: 5% 5% 4% 5%;
+    max-width: 1200px;
+    padding: 5%;
     margin:0 auto;
 }
 
@@ -378,7 +389,7 @@ h1 {
     width: 100%;
     padding-top:10px;
     padding-bottom: 10px;
-    background-color: #3f4a96;
+    background-color: #011a5c;
 }
 
 .footer .content {
@@ -490,9 +501,6 @@ h1 {
     .flex {
         display: block;
     }
-    .box {
-        margin: 0;
-    }
     .display-mobile {
         display: block;
         font-size: 30px;
@@ -500,5 +508,8 @@ h1 {
     }
     .mobile-none {
         display: none;
+    }
+    .home-tripple{
+        margin: 20px 0px;
     }
 }
