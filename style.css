@@ -134,7 +134,7 @@ body, ul, li, p {
     font-size: 16px;
     font-weight: 400;
     color: #000;
-    line-height: 25px;
+    line-height: 1.2em;
 }
 
 p {
@@ -150,7 +150,7 @@ h1 {
 }
 
 .large {
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 .big {
@@ -166,7 +166,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.50);
   position: relative;
   top: 82%;
-  padding: 20px 0px;
+  padding: 1% 5%;
   line-height:60px;
 }
 
@@ -413,41 +413,6 @@ h1 {
 
 .footer a:hover {
     color: #ECECEC;
-}
-
-.animated {
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translate3d(0, 100%, 0);
-        visibility: visible;
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.slideInUp {
-    animation-name: slideInUp;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  animation-name: fadeInDown;
 }
 
 .fade-in-1s {

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="animate.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <meta name="format-detection" content="telephone=no">
@@ -18,9 +19,10 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#" title="Example Link">LINK</a>
-    <a href="#" title="Example Link">LINK</a>
-    <a href="#" title="Example Link">LINK</a>
+    <a href="#" title="Example Link">HOME</a>
+    <a href="#" title="Example Link">SERVICES</a>
+    <a href="#" title="Example Link">GALLERY</a>
+    <a href="#" title="Example Link">CONTACT</a>
   </div>
 
   <!-- Nav -->
@@ -31,9 +33,9 @@
       <div class="display-mobile color-3"><span onclick="openNav()">&#9776;</span></div>
       <ul>
         <li><a href="#" title="Example Link" class="color-3 fade-in-1s mobile-none">HOME</a></li>
-        <li><a href="#services" title="Example Link" class="color-3 fade-in-1s mobile-none">SERVICES</a></li>
+        <li><a href="#" title="Example Link" class="color-3 fade-in-1s mobile-none">SERVICES</a></li>
         <li><a href="#" title="Example Link" class="color-3 fade-in-1s mobile-none">GALLERY</a></li>
-        <li><a href="#contact" title="Example Link" class="color-3 fade-in-1s mobile-none">CONTACT</a></li>
+        <li><a href="#" title="Example Link" class="color-3 fade-in-1s mobile-none">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -43,17 +45,17 @@
   </div>
   
   <!-- Content -->
-  <div id="services"></div>
+
 <div class="container">
     <div class="content">
       <div class="flex">
-        <div class="box rounded bg-color-3 fade-in-1s home-tripple wow">
+        <div class="box rounded bg-color-3 slideInUp home-tripple wow">
           <p class="color-1 large center margin-none">All aspects of vehicle valeting undertaken.</p>
         </div>
-        <div class="box rounded bg-color-3 fade-in-2s home-tripple wow">
+        <div class="box rounded bg-color-3 slideInUp home-tripple wow" data-wow-delay="0.1s">
           <p class="color-1 large center margin-none">Competitive prices and services to meet all valeting requirements.</p>
         </div>
-        <div class="box rounded bg-color-3 fade-in-3s home-tripple wow">
+        <div class="box rounded bg-color-3 slideInUp home-tripple wow" data-wow-delay="0.2s">
           <p class="color-1 large center margin-none">Fully self-sufficient van with pure water and power.</p>
         </div>
       </div>
@@ -87,19 +89,18 @@
     </div>
   </div>
 
-  <div id="contact"></div>
   <div class="container bg-color-1">
     <div class="content">
       <div class="flex middle">
         <div class="box center">
-          <img class="icons" src="images/autoglym-logo.gif">
+          <img class="icons slideInLeft animated wow" src="images/autoglym-logo.gif">
         </div>
         <div class="box center">
           <p class="color-4 large" >We use Auto Glym and Autosmart products from local distributors. Trained by Autosmart on procedures and usage of there products.</p>
           <p class="color-4 large" style="font-size:1.5em; font-weight: bold">Certified by Autosmart.</p>
         </div>
         <div class="box center">
-          <img class="icons" src="images/autosmart.jpg">
+          <img class="icons slideInRight wow" src="images/autosmart.jpg">
         </div>
       </div>
     </div>
