@@ -146,28 +146,30 @@ h1 {
 }
 
 .small {
-    font-size: 12px;
+    font-size: 0.7em;
 }
 
 .large {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .big {
-    font-size: 40px;
-    text-align: center;
-    line-height: 1em;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.bigger {
+    font-size: 3em;
     margin: 0px;
 }
 
 .massive {
-  font-size: 60px;
+  font-size: 3em;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.50);
   position: relative;
   top: 82%;
   padding: 1% 5%;
-  line-height:60px;
 }
 
 .italic {
@@ -235,6 +237,9 @@ h1 {
 
 .rounded {
     border-radius: 40px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-tripple {
@@ -465,5 +470,9 @@ h1 {
     }
     .large {
         font-size: 1.2em;
+    }
+    .massive {
+        font-size: 40px;
+        top: 70%;
     }
 }
