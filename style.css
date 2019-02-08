@@ -475,4 +475,7 @@ h1 {
         font-size: 40px;
         top: 70%;
     }
+    .bigger {
+        font-size: 1.8em;
+    }
 }
