@@ -228,7 +228,7 @@ h1 {
 
 .box {
     flex: 1;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .middle {
@@ -240,6 +240,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.rounded-image {
+    border-radius: 40px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .home-tripple {
@@ -380,6 +388,10 @@ h1 {
     max-width: 1200px;
     padding: 5%;
     margin:0 auto;
+}
+
+.no-padding-top {
+    padding-top: 0px;
 }
 
 .content-nav-only {
