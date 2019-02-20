@@ -254,6 +254,12 @@ h1 {
     padding: 30px;
 }
 
+.box-border { 
+    border: 2px solid #011a5c;
+    padding: 30px;
+    border-radius: 40px 5px;
+ }
+
 /********** Align **********/
 
 .center {
@@ -294,6 +300,7 @@ h1 {
     width: 100%;
     text-align: right;
     transition:0.5s;
+    box-shadow: 0px 2px 20px #011c67;
     z-index: 1;
 }
 
@@ -388,6 +395,13 @@ h1 {
     max-width: 1200px;
     padding: 5%;
     margin:0 auto;
+}
+
+.content-top {
+    max-width: 1200px;
+    padding: 5%;
+    margin:0 auto;
+    margin-top: 80px;
 }
 
 .no-padding-top {
