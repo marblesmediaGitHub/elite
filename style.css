@@ -163,6 +163,10 @@ h1 {
     margin: 0px;
 }
 
+.spaced {
+    margin-bottom: 35px;
+}
+
 .massive {
   font-size: 3em;
   color: #fff;
